@@ -1,0 +1,125 @@
+footer{
+    background: rgba(0,0,0, .2);
+    height: 6rem;
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-footer{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+.list-footer li{
+    list-style: none;
+    margin: 0 40px;
+
+}
+.list-footer li .fa{
+    font-size: 35px;
+    color: #262626;
+    line-height: 50px;
+    transition: .5s;
+}
+
+.list-footer li .cv{
+    font-size: 30px;
+}
+
+.list-footer li a{
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    text-align: center;
+    transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0,0);
+    transition: .5s;
+    box-shadow: -20px 20px 20px rgb(0, 0, 0, 0.5);
+}
+.list-footer li a::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transition: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+.list-footer li a::after{
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: -11px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transition: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+.list-footer li a:hover{
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+.list-footer li:hover .fa{
+    color: #fff;
+}
+.list-footer li a:hover{
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+.list-footer li:hover:nth-child(1) a{
+    background: #eecf55;
+}
+
+.list-footer li:hover:nth-child(1) a:before{
+    background: #b79f41;
+}
+.list-footer li:hover:nth-child(1) a:after{
+    background: #dec14d;
+}
+
+.list-footer li:hover:nth-child(2) a{
+    background: #55acee;
+}
+.list-footer li:hover:nth-child(2) a:before{
+    background: #4184b7;
+}
+.list-footer li:hover:nth-child(2) a:after{
+    background: #4d9fde;
+}
+.list-footer li:hover:nth-child(3) a{
+    background: #2d2b2b;
+}
+
+.list-footer li:hover:nth-child(3) a:before{
+    background: #000000;
+}
+.list-footer li:hover:nth-child(3) a:after{
+    background: #464141;
+}
+
+.list-footer li:hover:nth-child(4) a{
+    background: #0077B5;
+}
+
+.list-footer li:hover:nth-child(4) a:before{
+    background: #036aa0;
+}
+.list-footer li:hover:nth-child(4) a:after{
+    background: #0d82bf;
+}
+
+.list-footer li:hover:nth-child(5) a{
+    background: #42c751;
+}
+
+.list-footer li:hover:nth-child(5) a:before{
+    background: #276e30;
+}
+.list-footer li:hover:nth-child(5) a:after{
+    background: #22a431;
+}
